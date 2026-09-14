@@ -1,55 +1,56 @@
 
 # EX 1A Print All Numbers 
-## DATE: 20-07-2026
+## DATE: 
 ## AIM:
 To Write a Java program that takes an integer input N from the user and prints all the numbers from 1 to N, separated by spaces, on a single line..
 
 ## Algorithm
-1. Start
+1.Start the program.
 
-2. Input an integer N from the user.
+2.Input an integer N from the user.
 
-3. Initialize a counter variable i = 1.
+3.Check condition:
+If N <= 0, display "Invalid input. N must be greater than 0." and stop.
 
-4. Repeat while i ≤ N:
+4.Initialize a variable i = 1.
 
-5. Print i followed by a space.
+5.Use a loop to print numbers from 1 to N:
 
-6. Increment i by 1.
-  
+While i <= N, print i followed by a space.
+
+Increment i by 1.
+
+End loop and stop the program. 
+ 
 
 ## Program:
-
-Developed by: V Mythili
-Register Number:  212223040123
-
 ```
-import java.util.Scanner;
-
-public class Main {
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-
-        System.out.print("Enter an integer N: ");
-        int N = scanner.nextInt();
-
-        for (int i = 1; i <= N; i++) {
-            System.out.print(i);
-            if (i < N) System.out.print(" ");
+import java.util.*; 
+public class demo   
+{
+    public static void main(String args[]) 
+    {
+        int N,i;
+        Scanner sc=new Scanner(System.in);
+        N=sc.nextInt();  
+        if(N<=0)
+        {
+            System.out.println("Invalid input. N must be greater than 0.");
+            
         }
-
-        scanner.close();
+        else{
+            for(i=1;i<=N;i++){
+                System.out.print(i+" ");    
+            }
+        }
     }
 }
 ```
 
-
 ## Output:
+<img width="425" height="152" alt="image" src="https://github.com/user-attachments/assets/54163f54-8ab1-4383-ad7b-35428ac584b3" />
 
-<img width="815" height="258" alt="image" src="https://github.com/user-attachments/assets/23aa282f-bf9e-424e-ac7c-b0e28184d296" />
+
 
 ## Result:
-
-The program successfully print all the numbers from 1 to N.
-
-
+The program successfully print all the numbers from 1 to N. 
